@@ -15,8 +15,6 @@
 </p>
 
 
-An image picker based on Instagram picker UI. It is using the powerful [flutter_wechat_assets_picker](https://pub.dev/packages/wechat_assets_picker)
-package to handle the picker and a custom version of [image_crop](https://pub.dev/packages/image_crop) for crop.
 
 ## 🚀 Features
 
@@ -31,7 +29,7 @@ package to handle the picker and a custom version of [image_crop](https://pub.de
 - ✅ Crop all images at once and receive a stream with a progress value
 - ✅ Prepend or append a custom item in the assets list
 - ✅ Add custom action buttons
-- ❌ Videos are not supported
+- ✅ Videos are supported
 
 ## 📸 Screenshots
 
@@ -44,7 +42,7 @@ package to handle the picker and a custom version of [image_crop](https://pub.de
 Add this package to the `pubspec.yaml`
 
 ```yaml
-insta_assets_picker: ^2.3.0
+instagram_crop_images_video: ^1.0.4
 ```
 
 ### ‼️ DO NOT SKIP THIS PART
@@ -53,7 +51,7 @@ Since this package is a custom delegate of `flutter_wechat_assets_picker` you **
 
 ## 👀 Usage
 
-For more details check out the [example](https://github.com/LeGoffMael/insta_assets_picker/blob/main/example/lib/main.dart).
+For more details check out the [example](https://github.com/savitashukla/instagram_crop_images_video/blob/main/example/lib/main.dart).
 
 ```dart
 Future<List<AssetEntity>?> callPicker() => InstaAssetPicker.pickAssets(
@@ -71,7 +69,7 @@ Future<List<AssetEntity>?> callPicker() => InstaAssetPicker.pickAssets(
 );
 ```
 
-Fields in `InstaAssetsExportDetails`:
+Fields in `InstagramCropImagesVideo Details`:
 
 | Name           | Type                | Description                                             |
 | -------------- | ------------------- | ------------------------------------------------------- |
@@ -153,11 +151,11 @@ InstaAssetPicker.pickAssets(
 Many people requested the ability to take picture from the picker.
 The main aspect of this package is selection and uniform crop selection.
 Consequently, camera-related operations have no place in this package.
-However, since version `2.0.0`, it is now possible to trigger this action using either `specialItemBuilder` and/or `actionsBuilder`.
+However, since version `1.0.4`, it is now possible to trigger this action using either `specialItemBuilder` and/or `actionsBuilder`.
 
-The ability to take a photo from the camera must be handled on your side, but the picker is now able to refresh the list and select the new photo.
-New [examples](https://github.com/LeGoffMael/insta_assets_picker/tree/main/example/lib/pages/camera) have been written to show how to manage this process with the [camera](https://pub.dev/packages/camera) or [wechat_camera_picker](https://pub.dev/packages/wechat_camera_picker) package.
+The ability to take a photo and video from the camera must be handled on your side, but the picker is now able to refresh the list and select the new photo and video.
+New [examples](https://github.com/savitashukla/instagram_crop_images_video/blob/main/example/lib/pages/camera/camera_picker.dart) have been written to show how to manage this process with the [camera](https://pub.dev/packages/camera) or [wechat_camera_picker](https://pub.dev/packages/wechat_camera_picker) package.
 
 ## ✨ Credit
 
-This package is based on [flutter_wechat_assets_picker](https://pub.dev/packages/wechat_assets_picker) by [AlexV525](https://github.com/AlexV525) and [image_crop](https://pub.dev/packages/image_crop) by [lykhonis](https://github.com/lykhonis).
+This package is based on [flutter_wechat_assets_picker](https://pub.dev/packages/wechat_assets_picker) by [AlexV525](https://github.com/AlexV525) and [image_crop](https://pub.dev/packages/image_crop) 

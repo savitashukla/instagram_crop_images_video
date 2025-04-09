@@ -1,11 +1,12 @@
 name: instagram_crop_images_video
 description: "A new Flutter package project."
-version: 0.0.1
-repository: https://github.com/LeGoffMael/insta_assets_picker
+version: 1.0.4
+repository: https://github.com/savitashukla/instagram_crop_images_video
 topics:
   - picker
   - crop
   - image
+  - video
   - instagram
 homepage:
 
